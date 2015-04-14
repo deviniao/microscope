@@ -8,3 +8,5 @@ meteor-platform
 insecure
 coffeescript
 twbs:bootstrap
+iron:router
+sacha:spin
