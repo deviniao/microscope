@@ -13,7 +13,8 @@ Template.postEdit.events({ 'submit form': function (e) {
     Posts.update(currentPostId, {$set: postProperties}, function (error) {
         if (error) {
 //            alert(error.reason);
-            throwError(error.reason);
+//            throwError(error.reason);
+            Errors.throw(error.reason);
         } else {
             Router.go('postPage', {_id: currentPostId});
         }
